@@ -76,7 +76,7 @@ class LocationTrackingService : Service() {
 
     private fun startTracking() {
         if (tripId != -1L) return // sudah berjalan
-        startForeground(NOTIF_ID, buildNotification())
+        startForegroundCompat(NOTIF_ID, buildNotification())
 
         startTime = System.currentTimeMillis()
         scope.launch {
@@ -189,7 +189,7 @@ class LocationTrackingService : Service() {
             .build()
     }
 
-    private fun startForeground(id: Int, notification: Notification) {
+    private fun startForegroundCompat(id: Int, notification: Notification) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             startForeground(id, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_LOCATION)
         } else {
