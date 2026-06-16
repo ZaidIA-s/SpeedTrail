@@ -1,0 +1,7 @@
+<resources>
+    <!-- Theme dasar; tampilan sesungguhnya diatur oleh Compose Material3. -->
+    <style name="Theme.SpeedTrail" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+</resources>
