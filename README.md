@@ -11,6 +11,7 @@ berwarna sesuai kecepatan** dan analisis **di mana terjadi perlambatan**.
 - Grafik kecepatan yang warnanya selaras dengan peta.
 - Deteksi otomatis **zona perlambatan** (kecepatan di bawah ambang relatif terhadap rata-rata).
 - Dua mode pewarnaan: **Relatif** (kontekstual per-trip) & **Absolut** (ambang km/jam tetap).
+- **Timeline slider** di tampilan detail — geser untuk memutar ulang perjalanan titik per titik: marker lingkaran muncul di peta dan panel status menampilkan kecepatan (berwarna), waktu berlalu, serta posisi titik.
 
 ## Teknologi
 - Kotlin + Jetpack Compose (Material 3)
@@ -45,5 +46,4 @@ app/src/main/java/com/zaid/speedtrail/
 - Ekspor GPX/GeoJSON.
 - Pengaturan ambang warna & perlambatan oleh pengguna.
 - Penanda kecepatan maksimum & screenshot share.
-- Tap titik di grafik → highlight posisi di peta.
 - Penghalusan (smoothing) kecepatan & filter titik berakurasi buruk.
